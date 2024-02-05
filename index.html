@@ -1,5 +1,7 @@
 <!doctype html>
+
 <html lang="en">
+  
   <head>
     <title>Museo Virtual de la Escuela de Ingenierías Industriales</title>
     <meta charset="utf-8">
@@ -7,23 +9,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link type="text/css" href="./styles.css" rel="stylesheet"/>
   </head>
+  
   <body>
+    
     <!-- <model-viewer> HTML element -->
     <model-viewer src="Rectificadora Universal.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1" ios-src="Rectificadora Universal.usdz">
+      
       <div class="progress-bar hide" slot="progress-bar">
           <div class="update-bar"></div>
       </div>
+      
       <button slot="ar-button" id="ar-button">
           Activar realidad aumentada
       </button>
+      
       <div id="ar-prompt">
           <img src="ar_hand_prompt.png">
       </div>
+
+            
     </model-viewer>  
+
+    <button slot="ar-button" id="ar-button">
+          Acceso al cuestionario de satisfacción
+    </button>
+    
     <script src="script.js"></script>
+    
     <!-- Loads <model-viewer> for browsers: -->
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.2.0/model-viewer.min.js"></script>
-
-    <iframe width="640px" height="480px" src="https://forms.office.com/Pages/ResponsePage.aspx?id=Pz_152tjrUOAflfJZv99uKbnbHhdr_9DpGQ240egr0pUMjBIVVBUUjAxRTgzUTRYMjlENUs1VTlESy4u&embed=true" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
+    
   </body>
 </html>
