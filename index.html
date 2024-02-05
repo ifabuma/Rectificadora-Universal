@@ -23,6 +23,10 @@
           Activar realidad aumentada
       </button>
 
+      <button id="botonRedireccion">
+          Acceso al cuestionario de satisfacción
+      </button>
+
       <div id="ar-prompt">
           <img src="ar_hand_prompt.png">
       </div>
@@ -33,6 +37,14 @@
     
     <!-- Loads <model-viewer> for browsers: -->
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.2.0/model-viewer.min.js"></script>
+
+     <script>
+    // Agrega un evento de clic al nuevo botón de redirección
+    document.getElementById('botonRedireccion').addEventListener('click', function() {
+      // Redirige a la dirección deseada
+      window.location.href = 'https://forms.office.com/e/0wL3hMFtwA'; // Reemplaza con la URL que desees
+    });
+  </script>
     
   </body>
 </html>
