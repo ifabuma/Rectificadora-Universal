@@ -3,34 +3,17 @@
 <html lang="en">
   
   <head>
+    
     <title>Museo Virtual de la Escuela de Ingenierías Industriales</title>
     <meta charset="utf-8">
     <meta name="description" content="Rectificadora Universal">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link type="text/css" href="./styles.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-0Hj/ZBbD5b7W8sUqDfEO4fACFA7Lhrw5FUGrF5CzR5lR5uJ/2MFcVi5SrNSxEW9SPJBDWb26qQy4njEN18oY4g==" crossorigin="anonymous" />
-
+    
   </head>
   
   <body>
-
-    <nav id="mainnav" role="navigation">
-      <ul>
-        <li>
-          <a href="https://forms.office.com/pages/responsepage.aspx?id=Pz_152tjrUOAflfJZv99uKbnbHhdr_9DpGQ240egr0pUMjBIVVBUUjAxRTgzUTRYMjlENUs1VTlESy4u">
-            <i class="fa fa-question-circle"></i>
-            <span>Cuestionario</span>
-          </a>
-        </li>
-        <li>
-          <a href="https://drive.google.com/file/d/1BTmIRKcCvROcB3l_PVKNNuKD6ST-gVo1/view?usp=sharing">
-            <i class="fa fa-info-circle"></i>
-            <span>+ Información</span>
-          </a>
-        </li>
-      </ul>
-    </nav>
-    
+   
     <!-- <model-viewer> HTML element -->
     <model-viewer src="Rectificadora Universal.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1" ios-src="Rectificadora Universal.usdz">
       
@@ -42,7 +25,9 @@
           Activar realidad aumentada
       </button>
 
-      
+      <button id="botonRedireccion">
+          Acceso al cuestionario de satisfacción
+      </button>      
 
       <div id="ar-prompt">
           <img src="ar_hand_prompt.png">
