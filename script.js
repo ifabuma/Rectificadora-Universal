@@ -11,3 +11,23 @@ const onProgress = (event) => {
   }
 };
 document.querySelector('model-viewer').addEventListener('progress', onProgress);
+
+Nav = {
+  init : -> 
+    this.setup();
+    this.uiBind();
+    
+  setup : ->
+    $('#mainnav')
+      .find('li:not(:last-child)')
+      .toggleClass('invisible');
+    
+  uiBind : ->
+    $(document).on 'click', '#mainnav', (e)->
+      (e).preventDefault();
+      $(this).find('li:not(:last-child)')
+        .toggleClass('animate')
+        .toggleClass('invisible');
+}
+
+Nav.init();
