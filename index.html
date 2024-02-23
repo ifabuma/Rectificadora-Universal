@@ -13,9 +13,19 @@
   </head>
   
   <body>
+
+    <div class="popup-container" onclick="openLink()">
+    <div class="popup-content">
+      <p><img src="Menu.png" alt="Main Page"></p>
+    </div>
+  </div>
    
-    <!-- <model-viewer> HTML element -->
-    <model-viewer src="Rectificadora Universal.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1" ios-src="Rectificadora Universal.usdz">
+    <model-viewer 
+      src="Rectificadora Universal.glb" 
+      ar ar-modes="webxr scene-viewer quick-look" 
+      camera-controls poster="poster.webp" 
+      shadow-intensity="1" 
+      ios-src="Rectificadora Universal.usdz">
       
       <div class="progress-bar hide" slot="progress-bar">
           <div class="update-bar"></div>
