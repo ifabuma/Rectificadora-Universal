@@ -14,12 +14,7 @@
   
   <body>
 
-    <div class="popup-container" onclick="openLink()">
-    <div class="popup-content">
-      <p><img src="Menu.png" alt="Main Page"></p>
-    </div>
-  </div>
-   
+       
     <model-viewer 
       src="Rectificadora Universal.glb" 
       ar ar-modes="webxr scene-viewer quick-look" 
@@ -45,16 +40,12 @@
     
     <script src="script.js"></script>
     
-    <!-- Loads <model-viewer> for browsers: -->
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.2.0/model-viewer.min.js"></script>
 
-     <script>
-    // Agrega un evento de clic al nuevo botón de redirección
-    document.getElementById('botonRedireccion').addEventListener('click', function() {
-      // Redirige a la dirección deseada
-      window.location.href = 'https://forms.office.com/e/0wL3hMFtwA'; // Reemplaza con la URL que desees
-    });
-  </script>
-    
+     <div class="popup-container" onclick="openLink()">
+    <div class="popup-content">
+      <p><img src="Menu.png" alt="Main Page"></p>
+    </div>
+  </div>    
   </body>
 </html>
