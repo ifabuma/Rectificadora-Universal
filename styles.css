@@ -110,11 +110,11 @@ model-viewer > #ar-prompt > img {
 
 .popup-container {
       position: fixed;
-      top: 25%;
+      top: 90%;
       left: 92vw;
       transform: translate(-50%, -50%);
-      width: 100px;
-      height: 100px;
+      width: 50px;
+      height: 50px;
       border-radius: 50%;
       background-color: #003366;
       color: #fff;
