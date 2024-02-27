@@ -110,7 +110,7 @@ model-viewer > #ar-prompt > img {
 
 .popup-container {
       position: fixed;
-      top: 90%;
+      top: 95%;
       left: 92vw;
       transform: translate(-50%, -50%);
       width: 50px;
