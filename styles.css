@@ -114,6 +114,7 @@ model-viewer > #ar-prompt > img {
   right: 5%;
   width: 0;
   transform: translate(-50%, 55%);
+  z-index:999;
 }
 
 .toggle{
