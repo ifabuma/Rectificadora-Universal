@@ -108,70 +108,60 @@ model-viewer > #ar-prompt > img {
   animation: circle 4s linear infinite;
 }
 
-.popup-container {
-      position: fixed;
-      top: 10%;
-      left: 92vw;
-      transform: translate(-50%, -50%);
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-      background-color: #72c8e5;
-      color: #fff;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
-      overflow: hidden;
-    }
-
-    .popup-content {
-      text-align: center;
-    }
-
-.popup-content img {
-      width: 75%; 
-      height: auto; 
-      display: block;
-      margin: auto;
-    }
-
-.dropdown {
-  display: inline-block;
-  position: fixed;
-      top: 10%;
-      left: 92vw;
-      transform: translate(-50%, -50%);
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-      background-color: #72c8e5;
-      color: #fff;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
-      overflow: hidden;
-}
-.dropdown-content {
-  display: none;
+.menu{
   position: absolute;
-  width: 100%;
-  overflow: auto;
-  box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+  margin-top: 0%;
+  right: 5%;
+  width: 0;
+  transform: translate(-50%, 55%);
 }
-.dropdown:hover .dropdown-content {
+
+.toggle{
+  display: none;
+}
+
+.toggle + .menu-icon{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  transform: translate(-50%, -50%), scale(1);
   display: block;
+  background: #72c8e5;
+  text-align: center;
+  transition: all .8s;
 }
-.dropdown-content a {
+
+.menu-icon box-icon{
+  margin-top: 13px;
+  margin-left: 0px;
+  z-index: 999;
+}
+
+.menu-icon:hover{
+  box-shadow: 1px 1px 2px 1px #b4c4f0;
+}
+
+a{
+  opacity: 0;
+  position: relative;
+  margin-top: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  transform: translate(-50%, -50%), scale(1);
   display: block;
-  color: #000000;
-  padding: 5px;
-  text-decoration: none;
+  background: #72c8e5;
+  text-align: center;
+  transition: all .8s;
 }
-.dropdown-content a:hover {
-  color: #FFFFFF;
-  background-color: #00A4BD;
+
+a box-icon{
+  margin-top: 13px;
+  
+}
+
+.toggle:checked ~ a{
+  opacity: 1;
 }
