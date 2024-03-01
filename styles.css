@@ -112,7 +112,7 @@ model-viewer > #ar-prompt > img {
 .menu{
   position: absolute;
   margin-top: 0%;
-  right: 7%;
+  right: 10%;
   width: 0;
   transform: translate(-50%, 0);
   z-index:1000;
