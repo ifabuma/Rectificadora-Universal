@@ -14,8 +14,9 @@ body {
 }
 
 model-viewer {
-  width: 100%;
+  width: 94%;
   height: 90%;
+  left: 0%;
   background-color: #ffffff;
 }
 
@@ -128,7 +129,7 @@ model-viewer > #ar-prompt > img {
   cursor: pointer;
   transform: translate(-50%, -50%), scale(1);
   display: block;
-  background: #72c8e5;
+  background: #4285f4;
   text-align: center;
   transition: all .8s;
 }
@@ -153,7 +154,7 @@ a{
   cursor: pointer;
   transform: translate(-50%, -50%), scale(1);
   display: block;
-  background: #72c8e5;
+  background: #4285f4;
   text-align: center;
   transition: all .8s;
 }
